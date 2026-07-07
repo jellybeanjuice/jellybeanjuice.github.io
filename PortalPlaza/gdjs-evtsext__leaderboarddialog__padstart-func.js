@@ -9,7 +9,7 @@ gdjs.evtsExt__LeaderboardDialog__PadStart = {};
 gdjs.evtsExt__LeaderboardDialog__PadStart.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__LeaderboardDialog__PadStart.userFunc0x1142808 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__LeaderboardDialog__PadStart.userFunc0xd12a70 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const value = eventsFunctionContext.getArgument("Value");
 const targetLength = eventsFunctionContext.getArgument("TargetLength");
@@ -31,7 +31,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__LeaderboardDialog__PadStart.userFunc0x1142808(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__LeaderboardDialog__PadStart.userFunc0xd12a70(runtimeScene, eventsFunctionContext);
 
 }
 

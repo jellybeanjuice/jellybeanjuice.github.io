@@ -1,0 +1,12 @@
+{
+  "name": "MemeDrive",
+  "short_name": "MemeDrive",
+  "id": "com.jellybeanjuice.memedrive",
+  "description": "",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}

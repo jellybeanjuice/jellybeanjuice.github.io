@@ -1975,7 +1975,7 @@ gdjs.evtsExt__PhysicsCar__PhysicsCar.PhysicsCar.prototype.InertiaContext.idToCal
 gdjs.evtsExt__PhysicsCar__PhysicsCar.PhysicsCar.prototype.InertiaContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__PhysicsCar__PhysicsCar.PhysicsCar.prototype.InertiaContext.userFunc0x1372a20 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__PhysicsCar__PhysicsCar.PhysicsCar.prototype.InertiaContext.userFunc0xeb2558 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 // TODO Remove this function when the engine uses pixels instead of meters.
 
@@ -1999,7 +1999,7 @@ gdjs.evtsExt__PhysicsCar__PhysicsCar.PhysicsCar.prototype.InertiaContext.eventsL
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PhysicsCar__PhysicsCar.PhysicsCar.prototype.InertiaContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__PhysicsCar__PhysicsCar.PhysicsCar.prototype.InertiaContext.GDObjectObjects1;
-gdjs.evtsExt__PhysicsCar__PhysicsCar.PhysicsCar.prototype.InertiaContext.userFunc0x1372a20(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__PhysicsCar__PhysicsCar.PhysicsCar.prototype.InertiaContext.userFunc0xeb2558(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -2128,7 +2128,7 @@ eventsFunctionContext.localVariables.pop();
 }
 
 
-};gdjs.evtsExt__PhysicsCar__PhysicsCar.PhysicsCar.prototype.ApplyPolarForceContext.userFunc0x1371940 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+};gdjs.evtsExt__PhysicsCar__PhysicsCar.PhysicsCar.prototype.ApplyPolarForceContext.userFunc0x1e21bb8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 // TODO Remove this function when the engine uses pixels instead of meters.
 
@@ -2179,7 +2179,7 @@ gdjs.evtsExt__PhysicsCar__PhysicsCar.PhysicsCar.prototype.ApplyPolarForceContext
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PhysicsCar__PhysicsCar.PhysicsCar.prototype.ApplyPolarForceContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__PhysicsCar__PhysicsCar.PhysicsCar.prototype.ApplyPolarForceContext.GDObjectObjects1;
-gdjs.evtsExt__PhysicsCar__PhysicsCar.PhysicsCar.prototype.ApplyPolarForceContext.userFunc0x1371940(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__PhysicsCar__PhysicsCar.PhysicsCar.prototype.ApplyPolarForceContext.userFunc0x1e21bb8(runtimeScene, objects, eventsFunctionContext);
 
 }
 
