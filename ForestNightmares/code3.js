@@ -160,7 +160,7 @@ gdjs.GameCode.eventsList2 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(20158036);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22603012);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.GameCode.GDMonsterObjects2, gdjs.GameCode.GDMonsterObjects3);
@@ -196,13 +196,13 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.GameCode.GDPlayerObjects2
 
 };gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.GameCode.GDPlayerObjects1});
 gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDMonsterObjects1Objects = Hashtable.newFrom({"Monster": gdjs.GameCode.GDMonsterObjects1});
-gdjs.GameCode.asyncCallback26453316 = function (runtimeScene, asyncObjectsList) {
+gdjs.GameCode.asyncCallback24035388 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.GameCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Start", false);
 }
 gdjs.GameCode.localVariables.length = 0;
 }
-gdjs.GameCode.idToCallbackMap.set(26453316, gdjs.GameCode.asyncCallback26453316);
+gdjs.GameCode.idToCallbackMap.set(24035388, gdjs.GameCode.asyncCallback24035388);
 gdjs.GameCode.eventsList3 = function(runtimeScene) {
 
 {
@@ -212,7 +212,7 @@ gdjs.GameCode.eventsList3 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.GameCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.GameCode.asyncCallback26453316(runtimeScene, asyncObjectsList)), 26453316, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.GameCode.asyncCallback24035388(runtimeScene, asyncObjectsList)), 24035388, asyncObjectsList);
 }
 }
 

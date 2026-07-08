@@ -164,7 +164,7 @@ gdjs.ForestCode.eventsList2 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15777332);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15103724);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.ForestCode.GDMonsterObjects2, gdjs.ForestCode.GDMonsterObjects3);
@@ -200,13 +200,13 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ForestCode.GDPlayerObject
 
 };gdjs.ForestCode.mapOfGDgdjs_9546ForestCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.ForestCode.GDPlayerObjects1});
 gdjs.ForestCode.mapOfGDgdjs_9546ForestCode_9546GDMonsterObjects1Objects = Hashtable.newFrom({"Monster": gdjs.ForestCode.GDMonsterObjects1});
-gdjs.ForestCode.asyncCallback21024492 = function (runtimeScene, asyncObjectsList) {
+gdjs.ForestCode.asyncCallback16413788 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.ForestCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Start", false);
 }
 gdjs.ForestCode.localVariables.length = 0;
 }
-gdjs.ForestCode.idToCallbackMap.set(21024492, gdjs.ForestCode.asyncCallback21024492);
+gdjs.ForestCode.idToCallbackMap.set(16413788, gdjs.ForestCode.asyncCallback16413788);
 gdjs.ForestCode.eventsList3 = function(runtimeScene) {
 
 {
@@ -216,7 +216,7 @@ gdjs.ForestCode.eventsList3 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.ForestCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.ForestCode.asyncCallback21024492(runtimeScene, asyncObjectsList)), 21024492, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.ForestCode.asyncCallback16413788(runtimeScene, asyncObjectsList)), 16413788, asyncObjectsList);
 }
 }
 
@@ -750,6 +750,40 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ForestCode.GDPlayerObject
 
 {
 
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Button_pressed.func(runtimeScene, 1, "X", null);
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ForestCode.GDPlayerObjects1);
+{for(var i = 0, len = gdjs.ForestCode.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.ForestCode.GDPlayerObjects1[i].getBehavior("PhysicsCharacter3D").setForwardSpeedMax(600);
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Button_released.func(runtimeScene, 1, "X", null);
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ForestCode.GDPlayerObjects1);
+{for(var i = 0, len = gdjs.ForestCode.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.ForestCode.GDPlayerObjects1[i].getBehavior("PhysicsCharacter3D").setForwardSpeedMax(300);
+}
+}
+}
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("Door_Straight"), gdjs.ForestCode.GDDoor_9595StraightObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ForestCode.GDPlayerObjects1);
 
@@ -759,6 +793,26 @@ isConditionTrue_0 = gdjs.physics3d.haveObjectsStartedColliding(gdjs.ForestCode.m
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "House");
 }
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
 }
 
 }

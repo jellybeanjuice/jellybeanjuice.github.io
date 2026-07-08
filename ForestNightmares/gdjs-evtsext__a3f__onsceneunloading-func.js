@@ -9,7 +9,7 @@ gdjs.evtsExt__A3F__onSceneUnloading = {};
 gdjs.evtsExt__A3F__onSceneUnloading.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__A3F__onSceneUnloading.userFunc0x964858 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__A3F__onSceneUnloading.userFunc0x1c6c748 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 if (gdjs._A3F.AudioListener) {
     gdjs._A3F.AudioListener.removeFromParent();
@@ -23,7 +23,7 @@ gdjs.evtsExt__A3F__onSceneUnloading.eventsList0 = function(runtimeScene, eventsF
 {
 
 
-gdjs.evtsExt__A3F__onSceneUnloading.userFunc0x964858(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__A3F__onSceneUnloading.userFunc0x1c6c748(runtimeScene, eventsFunctionContext);
 
 }
 

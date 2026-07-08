@@ -9,7 +9,7 @@ gdjs.evtsExt__A3F__LocalRotateCameraAngle = {};
 gdjs.evtsExt__A3F__LocalRotateCameraAngle.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__A3F__LocalRotateCameraAngle.userFunc0xb901d8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__A3F__LocalRotateCameraAngle.userFunc0x1179310 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const Axis = eventsFunctionContext.getArgument("Axis");
 const Angle = eventsFunctionContext.getArgument("Angle");
@@ -35,7 +35,7 @@ gdjs.evtsExt__A3F__LocalRotateCameraAngle.eventsList0 = function(runtimeScene, e
 
 
 const objects = [];
-gdjs.evtsExt__A3F__LocalRotateCameraAngle.userFunc0xb901d8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__A3F__LocalRotateCameraAngle.userFunc0x1179310(runtimeScene, objects, eventsFunctionContext);
 
 }
 
