@@ -10,7 +10,7 @@ gdjs.evtsExt__A3F__SetListenerForObject.idToCallbackMap = new Map();
 gdjs.evtsExt__A3F__SetListenerForObject.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__A3F__SetListenerForObject.userFunc0x1c55368 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__A3F__SetListenerForObject.userFunc0x1186ae8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 if (objects.length == 0) {
     return;
@@ -32,7 +32,7 @@ gdjs.evtsExt__A3F__SetListenerForObject.eventsList0 = function(runtimeScene, eve
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__A3F__SetListenerForObject.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__A3F__SetListenerForObject.GDObjectObjects1;
-gdjs.evtsExt__A3F__SetListenerForObject.userFunc0x1c55368(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__A3F__SetListenerForObject.userFunc0x1186ae8(runtimeScene, objects, eventsFunctionContext);
 
 }
 

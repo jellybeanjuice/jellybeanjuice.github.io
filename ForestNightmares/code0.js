@@ -5,13 +5,13 @@ gdjs.StartScreenCode.GDNewSpriteObjects1= [];
 gdjs.StartScreenCode.GDNewSpriteObjects2= [];
 
 
-gdjs.StartScreenCode.asyncCallback24984116 = function (runtimeScene, asyncObjectsList) {
+gdjs.StartScreenCode.asyncCallback23623700 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.StartScreenCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Main Menu", false);
 }
 gdjs.StartScreenCode.localVariables.length = 0;
 }
-gdjs.StartScreenCode.idToCallbackMap.set(24984116, gdjs.StartScreenCode.asyncCallback24984116);
+gdjs.StartScreenCode.idToCallbackMap.set(23623700, gdjs.StartScreenCode.asyncCallback23623700);
 gdjs.StartScreenCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -21,7 +21,7 @@ gdjs.StartScreenCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.StartScreenCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.StartScreenCode.asyncCallback24984116(runtimeScene, asyncObjectsList)), 24984116, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.StartScreenCode.asyncCallback23623700(runtimeScene, asyncObjectsList)), 23623700, asyncObjectsList);
 }
 }
 

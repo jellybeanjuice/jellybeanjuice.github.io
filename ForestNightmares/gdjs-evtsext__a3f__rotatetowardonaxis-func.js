@@ -11,7 +11,7 @@ gdjs.evtsExt__A3F__RotateTowardOnAxis.GDObjectObjects1= [];
 gdjs.evtsExt__A3F__RotateTowardOnAxis.GDTargetObjects1= [];
 
 
-gdjs.evtsExt__A3F__RotateTowardOnAxis.userFunc0xb332f8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__A3F__RotateTowardOnAxis.userFunc0x10562b8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const Object2Ds = objects;
 const Target2Ds = eventsFunctionContext.getObjects("Target");
@@ -78,7 +78,7 @@ gdjs.evtsExt__A3F__RotateTowardOnAxis.eventsList0 = function(runtimeScene, event
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__A3F__RotateTowardOnAxis.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__A3F__RotateTowardOnAxis.GDObjectObjects1;
-gdjs.evtsExt__A3F__RotateTowardOnAxis.userFunc0xb332f8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__A3F__RotateTowardOnAxis.userFunc0x10562b8(runtimeScene, objects, eventsFunctionContext);
 
 }
 

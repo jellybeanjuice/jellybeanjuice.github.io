@@ -11,7 +11,7 @@ gdjs.evtsExt__A3F__CheckAngleToObjects.GDObjectObjects1= [];
 gdjs.evtsExt__A3F__CheckAngleToObjects.GDTargetObjects1= [];
 
 
-gdjs.evtsExt__A3F__CheckAngleToObjects.userFunc0x18065d8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__A3F__CheckAngleToObjects.userFunc0x12e20c0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const Targets = eventsFunctionContext.getObjects("Target");
 if (objects.length == 0 || Targets.length == 0) {
@@ -71,7 +71,7 @@ gdjs.evtsExt__A3F__CheckAngleToObjects.eventsList0 = function(runtimeScene, even
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__A3F__CheckAngleToObjects.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__A3F__CheckAngleToObjects.GDObjectObjects1;
-gdjs.evtsExt__A3F__CheckAngleToObjects.userFunc0x18065d8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__A3F__CheckAngleToObjects.userFunc0x12e20c0(runtimeScene, objects, eventsFunctionContext);
 
 }
 

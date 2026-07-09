@@ -10,7 +10,7 @@ gdjs.evtsExt__A3F__NormalizedDirection.idToCallbackMap = new Map();
 gdjs.evtsExt__A3F__NormalizedDirection.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__A3F__NormalizedDirection.userFunc0x139bef8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__A3F__NormalizedDirection.userFunc0x94c078 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const Object3D = objects[0].get3DRendererObject();
 const Axis = eventsFunctionContext.getArgument("Axis");
@@ -44,7 +44,7 @@ gdjs.evtsExt__A3F__NormalizedDirection.eventsList0 = function(runtimeScene, even
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__A3F__NormalizedDirection.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__A3F__NormalizedDirection.GDObjectObjects1;
-gdjs.evtsExt__A3F__NormalizedDirection.userFunc0x139bef8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__A3F__NormalizedDirection.userFunc0x94c078(runtimeScene, objects, eventsFunctionContext);
 
 }
 

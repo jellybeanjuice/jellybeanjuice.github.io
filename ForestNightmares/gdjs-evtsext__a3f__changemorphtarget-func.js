@@ -20,7 +20,7 @@ gdjs.evtsExt__A3F__ChangeMorphTarget.GDObjectObjects2= [];
 gdjs.evtsExt__A3F__ChangeMorphTarget.GDObjectObjects3= [];
 
 
-gdjs.evtsExt__A3F__ChangeMorphTarget.userFunc0x1c4b468 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__A3F__ChangeMorphTarget.userFunc0xa34710 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const Object3D = objects[0].get3DRendererObject();
 const TargetName = eventsFunctionContext.getArgument("TargetName");
@@ -56,7 +56,7 @@ gdjs.copyArray(gdjs.evtsExt__A3F__ChangeMorphTarget.GDObjectObjects2, gdjs.evtsE
 
 
 const objects = gdjs.evtsExt__A3F__ChangeMorphTarget.GDObjectObjects3;
-gdjs.evtsExt__A3F__ChangeMorphTarget.userFunc0x1c4b468(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__A3F__ChangeMorphTarget.userFunc0xa34710(runtimeScene, objects, eventsFunctionContext);
 
 }
 

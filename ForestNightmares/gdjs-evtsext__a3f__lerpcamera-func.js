@@ -10,7 +10,7 @@ gdjs.evtsExt__A3F__LerpCamera.idToCallbackMap = new Map();
 gdjs.evtsExt__A3F__LerpCamera.GDTargetObjects1= [];
 
 
-gdjs.evtsExt__A3F__LerpCamera.userFunc0xb84678 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__A3F__LerpCamera.userFunc0xbc83e8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const Layer = eventsFunctionContext.getArgument("Layer");
 // const CameraNumber = eventsFunctionContext.getArgument("CameraNumber");
@@ -61,7 +61,7 @@ gdjs.evtsExt__A3F__LerpCamera.eventsList0 = function(runtimeScene, eventsFunctio
 {
 
 
-gdjs.evtsExt__A3F__LerpCamera.userFunc0xb84678(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__A3F__LerpCamera.userFunc0xbc83e8(runtimeScene, eventsFunctionContext);
 
 }
 

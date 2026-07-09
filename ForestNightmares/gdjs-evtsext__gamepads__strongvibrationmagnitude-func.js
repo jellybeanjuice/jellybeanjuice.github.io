@@ -9,7 +9,7 @@ gdjs.evtsExt__Gamepads__StrongVibrationMagnitude = {};
 gdjs.evtsExt__Gamepads__StrongVibrationMagnitude.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Gamepads__StrongVibrationMagnitude.userFunc0x1af22a8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__StrongVibrationMagnitude.userFunc0xdb16c0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const playerId = eventsFunctionContext.getArgument("PlayerId") - 1;
 eventsFunctionContext.returnValue = gdjs._extensionController.getPlayer(playerId).rumble.strongMagnitude;
@@ -19,7 +19,7 @@ gdjs.evtsExt__Gamepads__StrongVibrationMagnitude.eventsList0 = function(runtimeS
 {
 
 
-gdjs.evtsExt__Gamepads__StrongVibrationMagnitude.userFunc0x1af22a8(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Gamepads__StrongVibrationMagnitude.userFunc0xdb16c0(runtimeScene, eventsFunctionContext);
 
 }
 

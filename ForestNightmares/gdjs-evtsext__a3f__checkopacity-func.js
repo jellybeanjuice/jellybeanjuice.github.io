@@ -10,7 +10,7 @@ gdjs.evtsExt__A3F__CheckOpacity.idToCallbackMap = new Map();
 gdjs.evtsExt__A3F__CheckOpacity.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__A3F__CheckOpacity.userFunc0x16cdfe8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__A3F__CheckOpacity.userFunc0x15cf8c8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 if (objects.length == 0) {
     return;
@@ -64,7 +64,7 @@ gdjs.evtsExt__A3F__CheckOpacity.eventsList0 = function(runtimeScene, eventsFunct
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__A3F__CheckOpacity.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__A3F__CheckOpacity.GDObjectObjects1;
-gdjs.evtsExt__A3F__CheckOpacity.userFunc0x16cdfe8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__A3F__CheckOpacity.userFunc0x15cf8c8(runtimeScene, objects, eventsFunctionContext);
 
 }
 

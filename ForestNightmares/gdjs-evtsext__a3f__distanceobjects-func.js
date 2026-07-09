@@ -11,7 +11,7 @@ gdjs.evtsExt__A3F__DistanceObjects.GDObjectObjects1= [];
 gdjs.evtsExt__A3F__DistanceObjects.GDTargetObjectObjects1= [];
 
 
-gdjs.evtsExt__A3F__DistanceObjects.userFunc0x16cdfe8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__A3F__DistanceObjects.userFunc0x10c7e90 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 //eventsFunctionContext.returnValue = 0;
 const TargetObjects = eventsFunctionContext.getObjects("TargetObject");
@@ -41,7 +41,7 @@ gdjs.evtsExt__A3F__DistanceObjects.eventsList0 = function(runtimeScene, eventsFu
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__A3F__DistanceObjects.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__A3F__DistanceObjects.GDObjectObjects1;
-gdjs.evtsExt__A3F__DistanceObjects.userFunc0x16cdfe8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__A3F__DistanceObjects.userFunc0x10c7e90(runtimeScene, objects, eventsFunctionContext);
 
 }
 

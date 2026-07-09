@@ -9,7 +9,7 @@ gdjs.evtsExt__A3F__SetListenerForCamera = {};
 gdjs.evtsExt__A3F__SetListenerForCamera.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__A3F__SetListenerForCamera.userFunc0x1748f40 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__A3F__SetListenerForCamera.userFunc0xa3a9f8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const Layer = eventsFunctionContext.getArgument("Layer");
 const Camera3D = runtimeScene.getLayer(Layer).getRenderer().getThreeCamera();
@@ -29,7 +29,7 @@ gdjs.evtsExt__A3F__SetListenerForCamera.eventsList0 = function(runtimeScene, eve
 {
 
 
-gdjs.evtsExt__A3F__SetListenerForCamera.userFunc0x1748f40(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__A3F__SetListenerForCamera.userFunc0xa3a9f8(runtimeScene, eventsFunctionContext);
 
 }
 

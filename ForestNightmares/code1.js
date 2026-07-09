@@ -21,9 +21,40 @@ gdjs.Main_32MenuCode.GDSkipBtnObjects1= [];
 gdjs.Main_32MenuCode.GDSkipBtnObjects2= [];
 gdjs.Main_32MenuCode.GDQuitBtnObjects1= [];
 gdjs.Main_32MenuCode.GDQuitBtnObjects2= [];
+gdjs.Main_32MenuCode.GDGreenButtonObjects1= [];
+gdjs.Main_32MenuCode.GDGreenButtonObjects2= [];
+gdjs.Main_32MenuCode.GDYellowButtonObjects1= [];
+gdjs.Main_32MenuCode.GDYellowButtonObjects2= [];
+gdjs.Main_32MenuCode.GDRedButtonObjects1= [];
+gdjs.Main_32MenuCode.GDRedButtonObjects2= [];
+gdjs.Main_32MenuCode.GDGreyButtonObjects1= [];
+gdjs.Main_32MenuCode.GDGreyButtonObjects2= [];
+gdjs.Main_32MenuCode.GDShareBtnObjects1= [];
+gdjs.Main_32MenuCode.GDShareBtnObjects2= [];
 
 
+gdjs.Main_32MenuCode.asyncCallback16157828 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.Main_32MenuCode.localVariables);
+gdjs.Main_32MenuCode.localVariables.length = 0;
+}
+gdjs.Main_32MenuCode.idToCallbackMap.set(16157828, gdjs.Main_32MenuCode.asyncCallback16157828);
 gdjs.Main_32MenuCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+asyncObjectsList.backupLocalVariablesContainers(gdjs.Main_32MenuCode.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__Share__Share.func(runtimeScene, "Check out the new Horror Game: The Forest Nightmares!", gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, null), "Share", null), (runtimeScene) => (gdjs.Main_32MenuCode.asyncCallback16157828(runtimeScene, asyncObjectsList)), 16157828, asyncObjectsList);
+}
+}
+
+}
+
+
+};gdjs.Main_32MenuCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -40,7 +71,9 @@ for (var i = 0, k = 0, l = gdjs.Main_32MenuCode.GDPlayBtnObjects1.length;i<l;++i
 }
 gdjs.Main_32MenuCode.GDPlayBtnObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Start", true);
+{gdjs.evtTools.storage.readNumberFromJSONFile("LevelsUnlocked", "Forest", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(0));
+}
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "LevelSelect", true);
 }
 }
 
@@ -62,7 +95,13 @@ for (var i = 0, k = 0, l = gdjs.Main_32MenuCode.GDSkipBtnObjects1.length;i<l;++i
 }
 gdjs.Main_32MenuCode.GDSkipBtnObjects1.length = k;
 if (isConditionTrue_0) {
+{gdjs.evtTools.storage.clearJSONFile("LevelsUnlocked");
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("LevelsUnlocked", "Forest", 0);
+}
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Forest", true);
+}
+{runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(0);
 }
 }
 
@@ -126,9 +165,39 @@ if (isConditionTrue_0) {
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("ShareBtn"), gdjs.Main_32MenuCode.GDShareBtnObjects1);
 
 let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Main_32MenuCode.GDShareBtnObjects1.length;i<l;++i) {
+    if ( gdjs.Main_32MenuCode.GDShareBtnObjects1[i].IsClicked(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.Main_32MenuCode.GDShareBtnObjects1[k] = gdjs.Main_32MenuCode.GDShareBtnObjects1[i];
+        ++k;
+    }
+}
+gdjs.Main_32MenuCode.GDShareBtnObjects1.length = k;
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Main_32MenuCode.eventsList0(runtimeScene);} //End of subevents
+}
+
+}
+
+
 {
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.evtsExt__Share__IsSharingSupported.func(runtimeScene, null));
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("ShareBtn"), gdjs.Main_32MenuCode.GDShareBtnObjects1);
+{for(var i = 0, len = gdjs.Main_32MenuCode.GDShareBtnObjects1.length ;i < len;++i) {
+    gdjs.Main_32MenuCode.GDShareBtnObjects1[i].deleteFromScene(runtimeScene);
+}
+}
 }
 
 }
@@ -159,8 +228,18 @@ gdjs.Main_32MenuCode.GDSkipBtnObjects1.length = 0;
 gdjs.Main_32MenuCode.GDSkipBtnObjects2.length = 0;
 gdjs.Main_32MenuCode.GDQuitBtnObjects1.length = 0;
 gdjs.Main_32MenuCode.GDQuitBtnObjects2.length = 0;
+gdjs.Main_32MenuCode.GDGreenButtonObjects1.length = 0;
+gdjs.Main_32MenuCode.GDGreenButtonObjects2.length = 0;
+gdjs.Main_32MenuCode.GDYellowButtonObjects1.length = 0;
+gdjs.Main_32MenuCode.GDYellowButtonObjects2.length = 0;
+gdjs.Main_32MenuCode.GDRedButtonObjects1.length = 0;
+gdjs.Main_32MenuCode.GDRedButtonObjects2.length = 0;
+gdjs.Main_32MenuCode.GDGreyButtonObjects1.length = 0;
+gdjs.Main_32MenuCode.GDGreyButtonObjects2.length = 0;
+gdjs.Main_32MenuCode.GDShareBtnObjects1.length = 0;
+gdjs.Main_32MenuCode.GDShareBtnObjects2.length = 0;
 
-gdjs.Main_32MenuCode.eventsList0(runtimeScene);
+gdjs.Main_32MenuCode.eventsList1(runtimeScene);
 gdjs.Main_32MenuCode.GDLogoObjects1.length = 0;
 gdjs.Main_32MenuCode.GDLogoObjects2.length = 0;
 gdjs.Main_32MenuCode.GDOld3Objects1.length = 0;
@@ -181,6 +260,16 @@ gdjs.Main_32MenuCode.GDSkipBtnObjects1.length = 0;
 gdjs.Main_32MenuCode.GDSkipBtnObjects2.length = 0;
 gdjs.Main_32MenuCode.GDQuitBtnObjects1.length = 0;
 gdjs.Main_32MenuCode.GDQuitBtnObjects2.length = 0;
+gdjs.Main_32MenuCode.GDGreenButtonObjects1.length = 0;
+gdjs.Main_32MenuCode.GDGreenButtonObjects2.length = 0;
+gdjs.Main_32MenuCode.GDYellowButtonObjects1.length = 0;
+gdjs.Main_32MenuCode.GDYellowButtonObjects2.length = 0;
+gdjs.Main_32MenuCode.GDRedButtonObjects1.length = 0;
+gdjs.Main_32MenuCode.GDRedButtonObjects2.length = 0;
+gdjs.Main_32MenuCode.GDGreyButtonObjects1.length = 0;
+gdjs.Main_32MenuCode.GDGreyButtonObjects2.length = 0;
+gdjs.Main_32MenuCode.GDShareBtnObjects1.length = 0;
+gdjs.Main_32MenuCode.GDShareBtnObjects2.length = 0;
 
 
 return;
