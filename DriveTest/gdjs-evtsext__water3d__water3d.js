@@ -123,7 +123,7 @@ gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onCreatedContext.GDAreaPlacehol
 gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onCreatedContext.GDAreaPlaceholderObjects2= [];
 
 
-gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onCreatedContext.userFunc0x1b37ff8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onCreatedContext.userFunc0xc3c348 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -152,7 +152,7 @@ let isConditionTrue_0 = false;
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onCreatedContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onCreatedContext.GDObjectObjects1;
-gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onCreatedContext.userFunc0x1b37ff8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onCreatedContext.userFunc0xc3c348(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -248,7 +248,7 @@ gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onDestroyContext.GDObjectObject
 gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onDestroyContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onDestroyContext.userFunc0x1a5e2d8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onDestroyContext.userFunc0x1a49410 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -261,7 +261,7 @@ gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onDestroyContext.eventsList0 = 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onDestroyContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onDestroyContext.GDObjectObjects1;
-gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onDestroyContext.userFunc0x1a5e2d8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onDestroyContext.userFunc0x1a49410(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -352,7 +352,7 @@ gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.doStepPostEventsContext.GDObjec
 gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.doStepPostEventsContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.doStepPostEventsContext.userFunc0x100e560 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.doStepPostEventsContext.userFunc0xf6e340 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -370,7 +370,7 @@ gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.doStepPostEventsContext.eventsL
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.doStepPostEventsContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.doStepPostEventsContext.GDObjectObjects1;
-gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.doStepPostEventsContext.userFunc0x100e560(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.doStepPostEventsContext.userFunc0xf6e340(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -461,7 +461,7 @@ gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onHotReloadingContext.GDObjectO
 gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onHotReloadingContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onHotReloadingContext.userFunc0x181fac0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onHotReloadingContext.userFunc0xf6e2e8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -474,7 +474,7 @@ gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onHotReloadingContext.eventsLis
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onHotReloadingContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onHotReloadingContext.GDObjectObjects1;
-gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onHotReloadingContext.userFunc0x181fac0(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.onHotReloadingContext.userFunc0xf6e2e8(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -565,7 +565,7 @@ gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.SurfaceZContext.GDObjectObjects
 gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.SurfaceZContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.SurfaceZContext.userFunc0x1b39ee0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.SurfaceZContext.userFunc0x1b90d50 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -580,7 +580,7 @@ gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.SurfaceZContext.eventsList0 = f
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.SurfaceZContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.SurfaceZContext.GDObjectObjects1;
-gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.SurfaceZContext.userFunc0x1b39ee0(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.SurfaceZContext.userFunc0x1b90d50(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -674,7 +674,7 @@ gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.IsUnderwaterContext.GDObjectsOb
 gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.IsUnderwaterContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.IsUnderwaterContext.userFunc0x8b72e0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.IsUnderwaterContext.userFunc0xad4650 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -693,7 +693,7 @@ gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.IsUnderwaterContext.eventsList0
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.IsUnderwaterContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.IsUnderwaterContext.GDObjectObjects1;
-gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.IsUnderwaterContext.userFunc0x8b72e0(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.IsUnderwaterContext.userFunc0xad4650(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -789,7 +789,7 @@ gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.ApplyBuoyancyContext.GDObjectsO
 gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.ApplyBuoyancyContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.ApplyBuoyancyContext.userFunc0x1b39e98 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.ApplyBuoyancyContext.userFunc0x1b4d300 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -805,7 +805,7 @@ gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.ApplyBuoyancyContext.eventsList
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.ApplyBuoyancyContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.ApplyBuoyancyContext.GDObjectObjects1;
-gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.ApplyBuoyancyContext.userFunc0x1b39e98(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Water3D__Water3D.Water3D.prototype.ApplyBuoyancyContext.userFunc0x1b4d300(runtimeScene, objects, eventsFunctionContext);
 
 }
 

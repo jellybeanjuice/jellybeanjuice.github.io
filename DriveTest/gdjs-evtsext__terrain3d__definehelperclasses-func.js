@@ -9,7 +9,7 @@ gdjs.evtsExt__Terrain3D__DefineHelperClasses = {};
 gdjs.evtsExt__Terrain3D__DefineHelperClasses.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Terrain3D__DefineHelperClasses.userFunc0x1b9eb38 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__DefineHelperClasses.userFunc0x1589cf8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 if (gdjs.__terrain3DExtension) {
     return;
@@ -2918,7 +2918,7 @@ gdjs.evtsExt__Terrain3D__DefineHelperClasses.eventsList0 = function(runtimeScene
 {
 
 
-gdjs.evtsExt__Terrain3D__DefineHelperClasses.userFunc0x1b9eb38(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__DefineHelperClasses.userFunc0x1589cf8(runtimeScene, eventsFunctionContext);
 
 }
 

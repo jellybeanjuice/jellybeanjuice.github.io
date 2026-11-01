@@ -150,7 +150,7 @@ gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onCreatedContext.GD
 gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onCreatedContext.GDAreaPlaceholderObjects2= [];
 
 
-gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onCreatedContext.userFunc0x11604e8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onCreatedContext.userFunc0x165d4b0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -191,7 +191,7 @@ let isConditionTrue_0 = false;
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onCreatedContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onCreatedContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onCreatedContext.userFunc0x11604e8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onCreatedContext.userFunc0x165d4b0(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -287,7 +287,7 @@ gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onDestroyContext.GD
 gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onDestroyContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onDestroyContext.userFunc0x1bf0788 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onDestroyContext.userFunc0x165d2c8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -300,7 +300,7 @@ gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onDestroyContext.ev
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onDestroyContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onDestroyContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onDestroyContext.userFunc0x1bf0788(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onDestroyContext.userFunc0x165d2c8(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -391,7 +391,7 @@ gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.doStepPostEventsCon
 gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.doStepPostEventsContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.doStepPostEventsContext.userFunc0x1524f38 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.doStepPostEventsContext.userFunc0xf342b0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -412,7 +412,7 @@ gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.doStepPostEventsCon
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.doStepPostEventsContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.doStepPostEventsContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.doStepPostEventsContext.userFunc0x1524f38(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.doStepPostEventsContext.userFunc0xf342b0(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -503,7 +503,7 @@ gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onHotReloadingConte
 gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onHotReloadingContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onHotReloadingContext.userFunc0x1525140 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onHotReloadingContext.userFunc0x1940748 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -516,7 +516,7 @@ gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onHotReloadingConte
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onHotReloadingContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onHotReloadingContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onHotReloadingContext.userFunc0x1525140(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__TerrainGrass.TerrainGrass.prototype.onHotReloadingContext.userFunc0x1940748(runtimeScene, objects, eventsFunctionContext);
 
 }
 

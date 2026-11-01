@@ -312,7 +312,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onCreatedContext.GDAreaPl
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onCreatedContext.GDAreaPlaceholderObjects2= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onCreatedContext.userFunc0x183aae0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onCreatedContext.userFunc0xc228d8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -341,7 +341,7 @@ let isConditionTrue_0 = false;
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onCreatedContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onCreatedContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onCreatedContext.userFunc0x183aae0(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onCreatedContext.userFunc0xc228d8(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -437,7 +437,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onDestroyContext.GDObject
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onDestroyContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onDestroyContext.userFunc0xea3340 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onDestroyContext.userFunc0x166c150 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -450,7 +450,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onDestroyContext.eventsLi
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onDestroyContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onDestroyContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onDestroyContext.userFunc0xea3340(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onDestroyContext.userFunc0x166c150(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -541,7 +541,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.doStepPostEventsContext.G
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.doStepPostEventsContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.doStepPostEventsContext.userFunc0xec1820 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.doStepPostEventsContext.userFunc0x19f1e78 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -554,7 +554,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.doStepPostEventsContext.e
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.doStepPostEventsContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.doStepPostEventsContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.doStepPostEventsContext.userFunc0xec1820(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.doStepPostEventsContext.userFunc0x19f1e78(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -645,7 +645,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onHotReloadingContext.GDO
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onHotReloadingContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onHotReloadingContext.userFunc0x10b8270 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onHotReloadingContext.userFunc0xf145a8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -658,7 +658,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onHotReloadingContext.eve
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onHotReloadingContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onHotReloadingContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onHotReloadingContext.userFunc0x10b8270(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.onHotReloadingContext.userFunc0xf145a8(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -749,7 +749,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundContext.GDObje
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundContext.userFunc0xf2d230 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundContext.userFunc0x19f1e28 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -766,7 +766,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundContext.events
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundContext.userFunc0xf2d230(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundContext.userFunc0x19f1e28(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -861,7 +861,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundAlongLineConte
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundAlongLineContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundAlongLineContext.userFunc0xea1310 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundAlongLineContext.userFunc0x15a3688 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -880,7 +880,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundAlongLineConte
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundAlongLineContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundAlongLineContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundAlongLineContext.userFunc0xea1310(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.RaiseGroundAlongLineContext.userFunc0x15a3688(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -977,7 +977,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FlattenGroundContext.GDOb
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FlattenGroundContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FlattenGroundContext.userFunc0x1bd5868 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FlattenGroundContext.userFunc0xc227d8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -994,7 +994,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FlattenGroundContext.even
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FlattenGroundContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FlattenGroundContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FlattenGroundContext.userFunc0x1bd5868(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FlattenGroundContext.userFunc0xc227d8(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -1089,7 +1089,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.SmoothGroundContext.GDObj
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.SmoothGroundContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.SmoothGroundContext.userFunc0xec17d0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.SmoothGroundContext.userFunc0x1160838 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -1106,7 +1106,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.SmoothGroundContext.event
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.SmoothGroundContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.SmoothGroundContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.SmoothGroundContext.userFunc0xec17d0(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.SmoothGroundContext.userFunc0x1160838(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -1201,7 +1201,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerContext.GDObjec
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerContext.userFunc0x10b8220 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerContext.userFunc0x1b20168 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -1218,7 +1218,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerContext.eventsL
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerContext.userFunc0x10b8220(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerContext.userFunc0x1b20168(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -1313,7 +1313,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerAlongLineContex
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerAlongLineContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerAlongLineContext.userFunc0x108fe68 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerAlongLineContext.userFunc0x153eef0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -1332,7 +1332,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerAlongLineContex
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerAlongLineContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerAlongLineContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerAlongLineContext.userFunc0x108fe68(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PaintLayerAlongLineContext.userFunc0x153eef0(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -1429,7 +1429,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.TintGroundContext.GDObjec
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.TintGroundContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.TintGroundContext.userFunc0xea12a8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.TintGroundContext.userFunc0x10ac7e8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -1446,7 +1446,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.TintGroundContext.eventsL
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.TintGroundContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.TintGroundContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.TintGroundContext.userFunc0xea12a8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.TintGroundContext.userFunc0x10ac7e8(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -1541,7 +1541,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.WetGroundContext.GDObject
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.WetGroundContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.WetGroundContext.userFunc0xfd4ae8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.WetGroundContext.userFunc0xf145b0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -1558,7 +1558,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.WetGroundContext.eventsLi
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.WetGroundContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.WetGroundContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.WetGroundContext.userFunc0xfd4ae8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.WetGroundContext.userFunc0xf145b0(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -1653,7 +1653,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundWetnessContext.GDOb
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundWetnessContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundWetnessContext.userFunc0xea1368 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundWetnessContext.userFunc0xf89378 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -1668,7 +1668,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundWetnessContext.even
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundWetnessContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundWetnessContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundWetnessContext.userFunc0xea1368(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundWetnessContext.userFunc0xf89378(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -1761,7 +1761,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundTintContext.GDObjec
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundTintContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundTintContext.userFunc0xf2d528 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundTintContext.userFunc0x17a0a88 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -1776,7 +1776,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundTintContext.eventsL
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundTintContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundTintContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundTintContext.userFunc0xf2d528(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundTintContext.userFunc0x17a0a88(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -1869,7 +1869,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.MakeHoleContext.GDObjectO
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.MakeHoleContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.MakeHoleContext.userFunc0xf2d230 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.MakeHoleContext.userFunc0xf893b8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -1885,7 +1885,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.MakeHoleContext.eventsLis
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.MakeHoleContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.MakeHoleContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.MakeHoleContext.userFunc0xf2d230(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.MakeHoleContext.userFunc0xf893b8(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -1979,7 +1979,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FillHolesContext.GDObject
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FillHolesContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FillHolesContext.userFunc0x183a940 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FillHolesContext.userFunc0xf145b0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -1995,7 +1995,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FillHolesContext.eventsLi
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FillHolesContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FillHolesContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FillHolesContext.userFunc0x183a940(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.FillHolesContext.userFunc0xf145b0(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -2089,7 +2089,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.CarveEntranceContext.GDOb
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.CarveEntranceContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.CarveEntranceContext.userFunc0xf2d320 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.CarveEntranceContext.userFunc0xc22830 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -2108,7 +2108,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.CarveEntranceContext.even
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.CarveEntranceContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.CarveEntranceContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.CarveEntranceContext.userFunc0xf2d320(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.CarveEntranceContext.userFunc0xc22830(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -2205,7 +2205,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.IsHoleContext.GDObjectObj
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.IsHoleContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.IsHoleContext.userFunc0xea1578 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.IsHoleContext.userFunc0x166c0a8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -2220,7 +2220,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.IsHoleContext.eventsList0
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.IsHoleContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.IsHoleContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.IsHoleContext.userFunc0xea1578(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.IsHoleContext.userFunc0x166c0a8(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -2313,7 +2313,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZWithHolesContext.G
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZWithHolesContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZWithHolesContext.userFunc0xf2d230 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZWithHolesContext.userFunc0x10ac830 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -2329,7 +2329,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZWithHolesContext.e
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZWithHolesContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZWithHolesContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZWithHolesContext.userFunc0xf2d230(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZWithHolesContext.userFunc0x10ac830(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -2423,7 +2423,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GenerateReliefContext.GDO
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GenerateReliefContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GenerateReliefContext.userFunc0x1bd5ac0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GenerateReliefContext.userFunc0x17a8a70 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -2438,7 +2438,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GenerateReliefContext.eve
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GenerateReliefContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GenerateReliefContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GenerateReliefContext.userFunc0x1bd5ac0(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GenerateReliefContext.userFunc0x17a8a70(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -2531,7 +2531,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.LoadHeightmapContext.GDOb
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.LoadHeightmapContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.LoadHeightmapContext.userFunc0xff1b60 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.LoadHeightmapContext.userFunc0xc22780 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -2545,7 +2545,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.LoadHeightmapContext.even
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.LoadHeightmapContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.LoadHeightmapContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.LoadHeightmapContext.userFunc0xff1b60(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.LoadHeightmapContext.userFunc0xc22780(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -2638,7 +2638,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PutOnGroundContext.GDObje
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PutOnGroundContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PutOnGroundContext.userFunc0x14fc198 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PutOnGroundContext.userFunc0xf14558 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -2651,7 +2651,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PutOnGroundContext.events
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PutOnGroundContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PutOnGroundContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PutOnGroundContext.userFunc0x14fc198(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.PutOnGroundContext.userFunc0xf14558(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -2746,7 +2746,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZContext.GDObjectOb
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZContext.userFunc0x14fc1e0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZContext.userFunc0x1031d18 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -2761,7 +2761,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZContext.eventsList
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZContext.userFunc0x14fc1e0(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundZContext.userFunc0x1031d18(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -2854,7 +2854,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundSlopeContext.GDObje
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundSlopeContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundSlopeContext.userFunc0x1bd5ac0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundSlopeContext.userFunc0xdfe308 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -2869,7 +2869,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundSlopeContext.events
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundSlopeContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundSlopeContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundSlopeContext.userFunc0x1bd5ac0(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundSlopeContext.userFunc0xdfe308(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -2962,7 +2962,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundLayerContext.GDObje
 gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundLayerContext.GDAreaPlaceholderObjects1= [];
 
 
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundLayerContext.userFunc0x1705dc8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundLayerContext.userFunc0x1660130 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject3D} */
 const object = objects[0];
@@ -2977,7 +2977,7 @@ gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundLayerContext.events
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundLayerContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundLayerContext.GDObjectObjects1;
-gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundLayerContext.userFunc0x1705dc8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Terrain3D__Terrain3D.Terrain3D.prototype.GroundLayerContext.userFunc0x1660130(runtimeScene, objects, eventsFunctionContext);
 
 }
 
