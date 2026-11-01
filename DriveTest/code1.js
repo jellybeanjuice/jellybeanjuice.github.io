@@ -1197,9 +1197,9 @@ isConditionTrue_0 = false;
 {isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber() == 1);
 }
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("WhiteGrass"), gdjs.Game_32SceneCode.GDWhiteGrassObjects1);
-{for(var i = 0, len = gdjs.Game_32SceneCode.GDWhiteGrassObjects1.length ;i < len;++i) {
-    gdjs.Game_32SceneCode.GDWhiteGrassObjects1[i].deleteFromScene(runtimeScene);
+gdjs.copyArray(runtimeScene.getObjects("WhiteGrass"), gdjs.Game_32SceneCode.GDWhiteGrassObjects2);
+{for(var i = 0, len = gdjs.Game_32SceneCode.GDWhiteGrassObjects2.length ;i < len;++i) {
+    gdjs.Game_32SceneCode.GDWhiteGrassObjects2[i].deleteFromScene(runtimeScene);
 }
 }
 {gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "", "Bloom", false);
@@ -1211,6 +1211,21 @@ gdjs.copyArray(runtimeScene.getObjects("WhiteGrass"), gdjs.Game_32SceneCode.GDWh
 {gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "", "HueAndSaturation", false);
 }
 {gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "", "ToneMapping", false);
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("SnowyMountainsTerrain"), gdjs.Game_32SceneCode.GDSnowyMountainsTerrainObjects1);
+{for(var i = 0, len = gdjs.Game_32SceneCode.GDSnowyMountainsTerrainObjects1.length ;i < len;++i) {
+    gdjs.Game_32SceneCode.GDSnowyMountainsTerrainObjects1[i].GenerateRelief("Mountains", gdjs.randomInRange(1, 10000000), null);
+}
 }
 }
 
