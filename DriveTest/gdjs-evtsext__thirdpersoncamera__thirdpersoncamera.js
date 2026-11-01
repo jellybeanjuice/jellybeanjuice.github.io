@@ -36,8 +36,12 @@ gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera = class Thi
     this._behaviorData.HasJustBeenCreated = true;
     this._behaviorData.IsRotatingWithObject = behaviorData.IsRotatingWithObject !== undefined ? behaviorData.IsRotatingWithObject : true;
     this._behaviorData.IsElevatingWithObject = behaviorData.IsElevatingWithObject !== undefined ? behaviorData.IsElevatingWithObject : false;
+    this._behaviorData.RotationMode = behaviorData.RotationMode !== undefined ? behaviorData.RotationMode : "Z";
     this._behaviorData.TargetedRotationAngle = Number("0") || 0;
     this._behaviorData.TargetedElevationAngle = Number("0") || 0;
+    this._behaviorData.ForwardX = Number("0") || 0;
+    this._behaviorData.ForwardY = Number("0") || 0;
+    this._behaviorData.ForwardZ = Number("0") || 0;
   }
 
   // Hot-reload:
@@ -83,10 +87,18 @@ gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera = class Thi
       this._behaviorData.IsRotatingWithObject = behaviorOverriding.IsRotatingWithObject;
     if (behaviorOverriding.IsElevatingWithObject !== undefined)
       this._behaviorData.IsElevatingWithObject = behaviorOverriding.IsElevatingWithObject;
+    if (behaviorOverriding.RotationMode !== undefined)
+      this._behaviorData.RotationMode = behaviorOverriding.RotationMode;
     if (behaviorOverriding.TargetedRotationAngle !== undefined)
       this._behaviorData.TargetedRotationAngle = behaviorOverriding.TargetedRotationAngle;
     if (behaviorOverriding.TargetedElevationAngle !== undefined)
       this._behaviorData.TargetedElevationAngle = behaviorOverriding.TargetedElevationAngle;
+    if (behaviorOverriding.ForwardX !== undefined)
+      this._behaviorData.ForwardX = behaviorOverriding.ForwardX;
+    if (behaviorOverriding.ForwardY !== undefined)
+      this._behaviorData.ForwardY = behaviorOverriding.ForwardY;
+    if (behaviorOverriding.ForwardZ !== undefined)
+      this._behaviorData.ForwardZ = behaviorOverriding.ForwardZ;
 
     return true;
   }
@@ -117,8 +129,12 @@ gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera = class Thi
     HasJustBeenCreated: this._behaviorData.HasJustBeenCreated,
     IsRotatingWithObject: this._behaviorData.IsRotatingWithObject,
     IsElevatingWithObject: this._behaviorData.IsElevatingWithObject,
+    RotationMode: this._behaviorData.RotationMode,
     TargetedRotationAngle: this._behaviorData.TargetedRotationAngle,
     TargetedElevationAngle: this._behaviorData.TargetedElevationAngle,
+    ForwardX: this._behaviorData.ForwardX,
+    ForwardY: this._behaviorData.ForwardY,
+    ForwardZ: this._behaviorData.ForwardZ,
       }
     };
   }
@@ -165,10 +181,18 @@ gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera = class Thi
       this._behaviorData.IsRotatingWithObject = networkSyncData.props.IsRotatingWithObject;
     if (networkSyncData.props.IsElevatingWithObject !== undefined)
       this._behaviorData.IsElevatingWithObject = networkSyncData.props.IsElevatingWithObject;
+    if (networkSyncData.props.RotationMode !== undefined)
+      this._behaviorData.RotationMode = networkSyncData.props.RotationMode;
     if (networkSyncData.props.TargetedRotationAngle !== undefined)
       this._behaviorData.TargetedRotationAngle = networkSyncData.props.TargetedRotationAngle;
     if (networkSyncData.props.TargetedElevationAngle !== undefined)
       this._behaviorData.TargetedElevationAngle = networkSyncData.props.TargetedElevationAngle;
+    if (networkSyncData.props.ForwardX !== undefined)
+      this._behaviorData.ForwardX = networkSyncData.props.ForwardX;
+    if (networkSyncData.props.ForwardY !== undefined)
+      this._behaviorData.ForwardY = networkSyncData.props.ForwardY;
+    if (networkSyncData.props.ForwardZ !== undefined)
+      this._behaviorData.ForwardZ = networkSyncData.props.ForwardZ;
   }
 
   // Properties:
@@ -305,6 +329,12 @@ gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera = class Thi
   _toggleIsElevatingWithObject() {
     this._setIsElevatingWithObject(!this._getIsElevatingWithObject());
   }
+  _getRotationMode() {
+    return this._behaviorData.RotationMode !== undefined ? this._behaviorData.RotationMode : "Z";
+  }
+  _setRotationMode(newValue) {
+    this._behaviorData.RotationMode = newValue;
+  }
   _getTargetedRotationAngle() {
     return this._behaviorData.TargetedRotationAngle !== undefined ? this._behaviorData.TargetedRotationAngle : Number("0") || 0;
   }
@@ -316,6 +346,24 @@ gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera = class Thi
   }
   _setTargetedElevationAngle(newValue) {
     this._behaviorData.TargetedElevationAngle = newValue;
+  }
+  _getForwardX() {
+    return this._behaviorData.ForwardX !== undefined ? this._behaviorData.ForwardX : Number("0") || 0;
+  }
+  _setForwardX(newValue) {
+    this._behaviorData.ForwardX = newValue;
+  }
+  _getForwardY() {
+    return this._behaviorData.ForwardY !== undefined ? this._behaviorData.ForwardY : Number("0") || 0;
+  }
+  _setForwardY(newValue) {
+    this._behaviorData.ForwardY = newValue;
+  }
+  _getForwardZ() {
+    return this._behaviorData.ForwardZ !== undefined ? this._behaviorData.ForwardZ : Number("0") || 0;
+  }
+  _setForwardZ(newValue) {
+    this._behaviorData.ForwardZ = newValue;
   }
 }
 
@@ -351,6 +399,18 @@ gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.o
 
 
 gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.onCreatedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{gdjs.evtsExt__ThirdPersonCamera__DefineHelperClasses.func(runtimeScene, eventsFunctionContext);
+}
+}
+
+}
+
 
 {
 
@@ -700,9 +760,27 @@ gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.D
 gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1= [];
 gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects2= [];
 gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects3= [];
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects4= [];
 
 
 gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects3);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraZ() < (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).FreeAreaZMin(eventsFunctionContext)));
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects3 */
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraZ((( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).FreeAreaZMin(eventsFunctionContext)) + (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraZ() - (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).FreeAreaZMin(eventsFunctionContext))) * Math.exp(gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene) * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTranslationZLogSpeed()))
+}
+}
+
+}
+
 
 {
 
@@ -710,28 +788,11 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThirdPe
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraZ() < (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects2[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).FreeAreaZMin(eventsFunctionContext)));
+{isConditionTrue_0 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraZ() > (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects2[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).FreeAreaZMax(eventsFunctionContext)));
 }
 if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects2 */
-{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraZ((( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects2[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).FreeAreaZMin(eventsFunctionContext)) + (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraZ() - (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects2[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).FreeAreaZMin(eventsFunctionContext))) * Math.exp(gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene) * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTranslationZLogSpeed()))
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraZ() > (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).FreeAreaZMax(eventsFunctionContext)));
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1 */
-{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraZ((( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).FreeAreaZMax(eventsFunctionContext)) + (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraZ() - (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).FreeAreaZMax(eventsFunctionContext))) * Math.exp(gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene) * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTranslationZLogSpeed()))
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraZ((( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects2[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).FreeAreaZMax(eventsFunctionContext)) + (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraZ() - (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects2[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).FreeAreaZMax(eventsFunctionContext))) * Math.exp(gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene) * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTranslationZLogSpeed()))
 }
 }
 
@@ -739,21 +800,6 @@ if (isConditionTrue_0) {
 
 
 };gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.eventsList1 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-
-{ //Subevents
-gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
-}
-
-}
-
-
-};gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.eventsList2 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
@@ -776,7 +822,24 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThirdPe
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsElevatingWithObject();
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+{isConditionTrue_1 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getRotationMode() != "Z");
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+{isConditionTrue_1 = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsElevatingWithObject();
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects2);
@@ -811,7 +874,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThirdPe
 }
 {eventsFunctionContext.localVariables[0].getFromIndex(1).setNumber(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTargetedElevationAngle() + eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getElevationAngleOffset() + gdjs.evtTools.common.angleDifference(90 - gdjs.scene3d.camera.getCameraRotationX(runtimeScene, (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getLayer()), 0), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTargetedElevationAngle() + eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getElevationAngleOffset()) * Math.exp(gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene) * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getElevationLogSpeed()));
 }
-{gdjs.evtsExt__ThirdPersonCamera__LookFromDistanceAtPosition3D.func(runtimeScene, (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getCenterXInScene()) + gdjs.evtsExt__ThirdPersonCamera__RotatedX.func(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(0).getAsNumber(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOffsetX(), -(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOffsetY()), eventsFunctionContext), (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getCenterYInScene()) + gdjs.evtsExt__ThirdPersonCamera__RotatedY.func(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(0).getAsNumber(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOffsetX(), -(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOffsetY()), eventsFunctionContext), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraZ() + eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOffsetZ(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDistance(), eventsFunctionContext.localVariables[0].getFromIndex(0).getAsNumber(), eventsFunctionContext.localVariables[0].getFromIndex(1).getAsNumber(), "", eventsFunctionContext);
+{gdjs.evtsExt__ThirdPersonCamera__LookFromDistanceAtPosition3D.func(runtimeScene, (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getCenterXInScene()) + gdjs.evtsExt__ThirdPersonCamera__RotatedX.func(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(0).getAsNumber(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOffsetX(), -(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOffsetY()), eventsFunctionContext), (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getCenterYInScene()) + gdjs.evtsExt__ThirdPersonCamera__RotatedY.func(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(0).getAsNumber(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOffsetX(), -(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOffsetY()), eventsFunctionContext), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraZ() + eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOffsetZ(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDistance(), eventsFunctionContext.localVariables[0].getFromIndex(0).getAsNumber(), eventsFunctionContext.localVariables[0].getFromIndex(1).getAsNumber(), (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getLayer()), eventsFunctionContext);
 }
 }
 eventsFunctionContext.localVariables.pop();
@@ -819,7 +882,14 @@ eventsFunctionContext.localVariables.pop();
 }
 
 
-};gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.eventsList3 = function(runtimeScene, eventsFunctionContext) {
+};gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.eventsList2 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.eventsList0(runtimeScene, eventsFunctionContext);
+}
+
 
 {
 
@@ -828,10 +898,71 @@ gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.D
 }
 
 
+};gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.eventsList3 = function(runtimeScene, eventsFunctionContext) {
+
 {
 
 
-gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.eventsList2(runtimeScene, eventsFunctionContext);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getRotationMode() == "ZYX");
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsRotatingWithObject();
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1);
+{for(var i = 0, len = gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).Slerp(1 - Math.exp(gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene) * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getRotationLogSpeed()), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getRotationAngleOffset(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getElevationAngleOffset(), eventsFunctionContext);
+}
+}
+{for(var i = 0, len = gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MoveToObject(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOffsetY(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOffsetX(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOffsetZ(), eventsFunctionContext);
+}
+}
+{gdjs.evtTools.camera.setCameraX(runtimeScene, gdjs.evtTools.camera.getCameraX(runtimeScene, (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getLayer()), 0) - (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDistance() * gdjs.scene3d.camera.getCameraForwardX(runtimeScene, (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getLayer()), 0)), (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getLayer()), 0);
+}
+{gdjs.evtTools.camera.setCameraY(runtimeScene, gdjs.evtTools.camera.getCameraY(runtimeScene, (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getLayer()), 0) - (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDistance() * gdjs.scene3d.camera.getCameraForwardY(runtimeScene, (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getLayer()), 0)), (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getLayer()), 0);
+}
+{gdjs.scene3d.camera.setCameraZ(runtimeScene, gdjs.scene3d.camera.getCameraZ(runtimeScene, (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getLayer()), 0) - (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDistance() * gdjs.scene3d.camera.getCameraForwardZ(runtimeScene, (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getLayer()), 0)), (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getLayer()), 0);
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+{isConditionTrue_1 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getRotationMode() != "ZYX");
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+{isConditionTrue_1 = !eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsRotatingWithObject();
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.eventsList2(runtimeScene, eventsFunctionContext);} //End of subevents
+}
+
 }
 
 
@@ -907,11 +1038,228 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
 gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length = 0;
 gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects2.length = 0;
 gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects3.length = 0;
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects4.length = 0;
 
 gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.eventsList3(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length = 0;
 gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects2.length = 0;
 gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects3.length = 0;
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects4.length = 0;
+
+
+return;
+}
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext = {};
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext.idToCallbackMap = new Map();
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext.GDObjectObjects1= [];
+
+
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext.userFunc0xec8f50 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+"use strict";
+/** @type {gdjs.RuntimeObject3D} */
+const object = objects[0];
+const ratio = eventsFunctionContext.getArgument("Ratio");
+const rotationAngleOffset = eventsFunctionContext.getArgument("NewRotationAngleOffset");
+const elevationAngleOffset = eventsFunctionContext.getArgument("NewElevationAngleOffset");
+
+gdjs.__thirdPersonCameraExtension.slerpCamera(object, ratio, rotationAngleOffset, elevationAngleOffset);
+
+};
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext.GDObjectObjects1);
+
+const objects = gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext.GDObjectObjects1;
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext.userFunc0xec8f50(runtimeScene, objects, eventsFunctionContext);
+
+}
+
+
+};
+
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.Slerp = function(Ratio, NewRotationAngleOffset, NewElevationAngleOffset, parentEventsFunctionContext) {
+
+var that = this;
+var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
+var thisObjectList = [this.owner];
+var Object = Hashtable.newFrom({Object: thisObjectList});
+var Behavior = this.name;
+var eventsFunctionContext = {
+  _objectsMap: {
+"Object": Object
+},
+  _objectArraysMap: {
+"Object": thisObjectList
+},
+  _behaviorNamesMap: {
+"Behavior": Behavior
+, "Object3D": this._getObject3D()
+},
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ThirdPersonCamera"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ThirdPersonCamera"),
+  localVariables: [],
+  getObjects: function(objectName) {
+    return eventsFunctionContext._objectArraysMap[objectName] || [];
+  },
+  getObjectsLists: function(objectName) {
+    return eventsFunctionContext._objectsMap[objectName] || null;
+  },
+  getBehaviorName: function(behaviorName) {
+    return eventsFunctionContext._behaviorNamesMap[behaviorName] || behaviorName;
+  },
+  createObject: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    if (objectsList) {
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
+        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
+        runtimeScene.createObject(objectsList.firstKey());
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+      }
+      return object;
+    }
+    return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
+  },
+  getLayer: function(layerName) {
+    return runtimeScene.getLayer(layerName);
+  },
+  getArgument: function(argName) {
+if (argName === "Ratio") return Ratio;
+if (argName === "NewRotationAngleOffset") return NewRotationAngleOffset;
+if (argName === "NewElevationAngleOffset") return NewElevationAngleOffset;
+    return "";
+  },
+  getOnceTriggers: function() { return that._onceTriggers; }
+};
+
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext.GDObjectObjects1.length = 0;
+
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext.GDObjectObjects1.length = 0;
+
+
+return;
+}
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext = {};
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.idToCallbackMap = new Map();
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1= [];
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects2= [];
+
+
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1);
+{gdjs.evtTools.camera.setCameraX(runtimeScene, (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1[0].getCenterXInScene()) + eventsFunctionContext.getArgument("LocalOffsetX") * (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Object3D")).getForwardX()) + eventsFunctionContext.getArgument("LocalOffsetY") * (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Object3D")).getRightX()) + eventsFunctionContext.getArgument("LocalOffsetZ") * (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Object3D")).getUpX()), (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1[0].getLayer()), 0);
+}
+{gdjs.evtTools.camera.setCameraY(runtimeScene, (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1[0].getCenterYInScene()) + eventsFunctionContext.getArgument("LocalOffsetX") * (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Object3D")).getForwardY()) + eventsFunctionContext.getArgument("LocalOffsetY") * (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Object3D")).getRightY()) + eventsFunctionContext.getArgument("LocalOffsetZ") * (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Object3D")).getUpY()), (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1[0].getLayer()), 0);
+}
+{gdjs.scene3d.camera.setCameraZ(runtimeScene, (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Object3D")).getCenterZInScene()) + eventsFunctionContext.getArgument("LocalOffsetX") * (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Object3D")).getForwardZ()) + eventsFunctionContext.getArgument("LocalOffsetY") * (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Object3D")).getRightZ()) + eventsFunctionContext.getArgument("LocalOffsetZ") * (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Object3D")).getUpZ()), (( gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1[0].getLayer()), 0);
+}
+}
+
+}
+
+
+};
+
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObject = function(LocalOffsetX, LocalOffsetY, LocalOffsetZ, parentEventsFunctionContext) {
+
+var that = this;
+var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
+var thisObjectList = [this.owner];
+var Object = Hashtable.newFrom({Object: thisObjectList});
+var Behavior = this.name;
+var eventsFunctionContext = {
+  _objectsMap: {
+"Object": Object
+},
+  _objectArraysMap: {
+"Object": thisObjectList
+},
+  _behaviorNamesMap: {
+"Behavior": Behavior
+, "Object3D": this._getObject3D()
+},
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ThirdPersonCamera"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ThirdPersonCamera"),
+  localVariables: [],
+  getObjects: function(objectName) {
+    return eventsFunctionContext._objectArraysMap[objectName] || [];
+  },
+  getObjectsLists: function(objectName) {
+    return eventsFunctionContext._objectsMap[objectName] || null;
+  },
+  getBehaviorName: function(behaviorName) {
+    return eventsFunctionContext._behaviorNamesMap[behaviorName] || behaviorName;
+  },
+  createObject: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    if (objectsList) {
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
+        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
+        runtimeScene.createObject(objectsList.firstKey());
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+      }
+      return object;
+    }
+    return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
+  },
+  getLayer: function(layerName) {
+    return runtimeScene.getLayer(layerName);
+  },
+  getArgument: function(argName) {
+if (argName === "LocalOffsetX") return LocalOffsetX;
+if (argName === "LocalOffsetY") return LocalOffsetY;
+if (argName === "LocalOffsetZ") return LocalOffsetZ;
+    return "";
+  },
+  getOnceTriggers: function() { return that._onceTriggers; }
+};
+
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects2.length = 0;
+
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.MoveToObjectContext.GDObjectObjects2.length = 0;
 
 
 return;
