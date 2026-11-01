@@ -1,7 +1,7 @@
 {
   "name": "Open Worldience",
   "short_name": "Open Worldience",
-  "id": "com.example.gamename",
+  "id": "com.jellybeanjuice.mountains",
   "description": "",
   "orientation": "landscape",
   "start_url": "./index.html",

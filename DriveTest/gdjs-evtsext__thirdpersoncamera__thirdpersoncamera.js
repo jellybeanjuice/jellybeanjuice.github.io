@@ -1054,7 +1054,7 @@ gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.S
 gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext.userFunc0x1756a90 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext.userFunc0x1b9e610 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.RuntimeObject3D} */
 const object = objects[0];
@@ -1072,7 +1072,7 @@ gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.S
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext.GDObjectObjects1;
-gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext.userFunc0x1756a90(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__ThirdPersonCamera__ThirdPersonCamera.ThirdPersonCamera.prototype.SlerpContext.userFunc0x1b9e610(runtimeScene, objects, eventsFunctionContext);
 
 }
 

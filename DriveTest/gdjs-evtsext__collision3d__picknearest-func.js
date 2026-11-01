@@ -10,7 +10,7 @@ gdjs.evtsExt__Collision3D__PickNearest.idToCallbackMap = new Map();
 gdjs.evtsExt__Collision3D__PickNearest.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Collision3D__PickNearest.userFunc0x8eec70 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Collision3D__PickNearest.userFunc0x2361da8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 // TODO If the condition is inverted, the object farthest from the specified position is picked instead.
 const inverted = false;
@@ -28,7 +28,7 @@ gdjs.evtsExt__Collision3D__PickNearest.eventsList0 = function(runtimeScene, even
 {
 
 
-gdjs.evtsExt__Collision3D__PickNearest.userFunc0x8eec70(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Collision3D__PickNearest.userFunc0x2361da8(runtimeScene, eventsFunctionContext);
 
 }
 

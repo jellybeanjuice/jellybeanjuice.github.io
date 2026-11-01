@@ -9,7 +9,7 @@ gdjs.evtsExt__Water3D__DefineHelperClasses = {};
 gdjs.evtsExt__Water3D__DefineHelperClasses.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Water3D__DefineHelperClasses.userFunc0xfd3850 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Water3D__DefineHelperClasses.userFunc0x8c5c98 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 if (gdjs.__water3DExtension) {
     return;
@@ -462,7 +462,7 @@ gdjs.evtsExt__Water3D__DefineHelperClasses.eventsList0 = function(runtimeScene, 
 {
 
 
-gdjs.evtsExt__Water3D__DefineHelperClasses.userFunc0xfd3850(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Water3D__DefineHelperClasses.userFunc0x8c5c98(runtimeScene, eventsFunctionContext);
 
 }
 
