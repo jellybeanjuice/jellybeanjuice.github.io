@@ -41,6 +41,14 @@ gdjs.Main_32MenuCode.GDYellowButtonObjects1= [];
 gdjs.Main_32MenuCode.GDYellowButtonObjects2= [];
 gdjs.Main_32MenuCode.GDRedCircleEndedLineSliderObjects1= [];
 gdjs.Main_32MenuCode.GDRedCircleEndedLineSliderObjects2= [];
+gdjs.Main_32MenuCode.GDSeedInputObjects1= [];
+gdjs.Main_32MenuCode.GDSeedInputObjects2= [];
+gdjs.Main_32MenuCode.GDRoundedSquareBlueToggleObjects1= [];
+gdjs.Main_32MenuCode.GDRoundedSquareBlueToggleObjects2= [];
+gdjs.Main_32MenuCode.GDPlaygroundModeCheckboxObjects1= [];
+gdjs.Main_32MenuCode.GDPlaygroundModeCheckboxObjects2= [];
+gdjs.Main_32MenuCode.GDNewSprite2Objects1= [];
+gdjs.Main_32MenuCode.GDNewSprite2Objects2= [];
 
 
 gdjs.Main_32MenuCode.eventsList0 = function(runtimeScene) {
@@ -76,9 +84,12 @@ for (var i = 0, k = 0, l = gdjs.Main_32MenuCode.GDGreenButtonObjects1.length;i<l
 gdjs.Main_32MenuCode.GDGreenButtonObjects1.length = k;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("RedCircleEndedLineSlider"), gdjs.Main_32MenuCode.GDRedCircleEndedLineSliderObjects1);
+gdjs.copyArray(runtimeScene.getObjects("SeedInput"), gdjs.Main_32MenuCode.GDSeedInputObjects1);
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(2);
 }
 {runtimeScene.getGame().getVariables().getFromIndex(1).setNumber((( gdjs.Main_32MenuCode.GDRedCircleEndedLineSliderObjects1.length === 0 ) ? 0 :gdjs.Main_32MenuCode.GDRedCircleEndedLineSliderObjects1[0].Value(null)));
+}
+{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.evtTools.common.toNumber((( gdjs.Main_32MenuCode.GDSeedInputObjects1.length === 0 ) ? "" :gdjs.Main_32MenuCode.GDSeedInputObjects1[0].getText())));
 }
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Game Scene", false);
 }
@@ -103,9 +114,12 @@ for (var i = 0, k = 0, l = gdjs.Main_32MenuCode.GDYellowButtonObjects1.length;i<
 gdjs.Main_32MenuCode.GDYellowButtonObjects1.length = k;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("RedCircleEndedLineSlider"), gdjs.Main_32MenuCode.GDRedCircleEndedLineSliderObjects1);
+gdjs.copyArray(runtimeScene.getObjects("SeedInput"), gdjs.Main_32MenuCode.GDSeedInputObjects1);
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(1);
 }
 {runtimeScene.getGame().getVariables().getFromIndex(1).setNumber((( gdjs.Main_32MenuCode.GDRedCircleEndedLineSliderObjects1.length === 0 ) ? 0 :gdjs.Main_32MenuCode.GDRedCircleEndedLineSliderObjects1[0].Value(null)));
+}
+{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.evtTools.common.toNumber((( gdjs.Main_32MenuCode.GDSeedInputObjects1.length === 0 ) ? "" :gdjs.Main_32MenuCode.GDSeedInputObjects1[0].getText())));
 }
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Game Scene", false);
 }
@@ -159,6 +173,14 @@ gdjs.Main_32MenuCode.GDYellowButtonObjects1.length = 0;
 gdjs.Main_32MenuCode.GDYellowButtonObjects2.length = 0;
 gdjs.Main_32MenuCode.GDRedCircleEndedLineSliderObjects1.length = 0;
 gdjs.Main_32MenuCode.GDRedCircleEndedLineSliderObjects2.length = 0;
+gdjs.Main_32MenuCode.GDSeedInputObjects1.length = 0;
+gdjs.Main_32MenuCode.GDSeedInputObjects2.length = 0;
+gdjs.Main_32MenuCode.GDRoundedSquareBlueToggleObjects1.length = 0;
+gdjs.Main_32MenuCode.GDRoundedSquareBlueToggleObjects2.length = 0;
+gdjs.Main_32MenuCode.GDPlaygroundModeCheckboxObjects1.length = 0;
+gdjs.Main_32MenuCode.GDPlaygroundModeCheckboxObjects2.length = 0;
+gdjs.Main_32MenuCode.GDNewSprite2Objects1.length = 0;
+gdjs.Main_32MenuCode.GDNewSprite2Objects2.length = 0;
 
 gdjs.Main_32MenuCode.eventsList0(runtimeScene);
 gdjs.Main_32MenuCode.GDCarObjects1.length = 0;
@@ -201,6 +223,14 @@ gdjs.Main_32MenuCode.GDYellowButtonObjects1.length = 0;
 gdjs.Main_32MenuCode.GDYellowButtonObjects2.length = 0;
 gdjs.Main_32MenuCode.GDRedCircleEndedLineSliderObjects1.length = 0;
 gdjs.Main_32MenuCode.GDRedCircleEndedLineSliderObjects2.length = 0;
+gdjs.Main_32MenuCode.GDSeedInputObjects1.length = 0;
+gdjs.Main_32MenuCode.GDSeedInputObjects2.length = 0;
+gdjs.Main_32MenuCode.GDRoundedSquareBlueToggleObjects1.length = 0;
+gdjs.Main_32MenuCode.GDRoundedSquareBlueToggleObjects2.length = 0;
+gdjs.Main_32MenuCode.GDPlaygroundModeCheckboxObjects1.length = 0;
+gdjs.Main_32MenuCode.GDPlaygroundModeCheckboxObjects2.length = 0;
+gdjs.Main_32MenuCode.GDNewSprite2Objects1.length = 0;
+gdjs.Main_32MenuCode.GDNewSprite2Objects2.length = 0;
 
 
 return;

@@ -76,6 +76,11 @@ gdjs.Game_32SceneCode.GDWaterObjects2= [];
 gdjs.Game_32SceneCode.GDWaterObjects3= [];
 gdjs.Game_32SceneCode.GDWaterObjects4= [];
 gdjs.Game_32SceneCode.GDWaterObjects5= [];
+gdjs.Game_32SceneCode.GDSeedTextObjects1= [];
+gdjs.Game_32SceneCode.GDSeedTextObjects2= [];
+gdjs.Game_32SceneCode.GDSeedTextObjects3= [];
+gdjs.Game_32SceneCode.GDSeedTextObjects4= [];
+gdjs.Game_32SceneCode.GDSeedTextObjects5= [];
 
 
 gdjs.Game_32SceneCode.eventsList0 = function(runtimeScene) {
@@ -1221,10 +1226,63 @@ gdjs.copyArray(runtimeScene.getObjects("WhiteGrass"), gdjs.Game_32SceneCode.GDWh
 
 
 let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(2).getAsNumber() == 0);
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("SnowyMountainsTerrain"), gdjs.Game_32SceneCode.GDSnowyMountainsTerrainObjects2);
+{runtimeScene.getScene().getVariables().getFromIndex(3).setNumber(gdjs.randomInRange(1, 10000000));
+}
+{for(var i = 0, len = gdjs.Game_32SceneCode.GDSnowyMountainsTerrainObjects2.length ;i < len;++i) {
+    gdjs.Game_32SceneCode.GDSnowyMountainsTerrainObjects2[i].GenerateRelief("Mountains", runtimeScene.getScene().getVariables().getFromIndex(3).getAsNumber(), null);
+}
+}
+}
+
+}
+
+
 {
-gdjs.copyArray(runtimeScene.getObjects("SnowyMountainsTerrain"), gdjs.Game_32SceneCode.GDSnowyMountainsTerrainObjects1);
-{for(var i = 0, len = gdjs.Game_32SceneCode.GDSnowyMountainsTerrainObjects1.length ;i < len;++i) {
-    gdjs.Game_32SceneCode.GDSnowyMountainsTerrainObjects1[i].GenerateRelief("Mountains", gdjs.randomInRange(1, 10000000), null);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(2).getAsNumber() != 0);
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("SnowyMountainsTerrain"), gdjs.Game_32SceneCode.GDSnowyMountainsTerrainObjects2);
+{runtimeScene.getScene().getVariables().getFromIndex(3).setNumber(runtimeScene.getGame().getVariables().getFromIndex(2).getAsNumber());
+}
+{for(var i = 0, len = gdjs.Game_32SceneCode.GDSnowyMountainsTerrainObjects2.length ;i < len;++i) {
+    gdjs.Game_32SceneCode.GDSnowyMountainsTerrainObjects2[i].GenerateRelief("Mountains", runtimeScene.getScene().getVariables().getFromIndex(3).getAsNumber(), null);
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("Driven_Car"), gdjs.Game_32SceneCode.GDDriven_9595CarObjects1);
+gdjs.copyArray(runtimeScene.getObjects("SeedText"), gdjs.Game_32SceneCode.GDSeedTextObjects1);
+{for(var i = 0, len = gdjs.Game_32SceneCode.GDSeedTextObjects1.length ;i < len;++i) {
+    gdjs.Game_32SceneCode.GDSeedTextObjects1[i].getBehavior("Text").setText("SEED: " + runtimeScene.getScene().getVariables().getFromIndex(3).getAsString());
+}
+}
+{for(var i = 0, len = gdjs.Game_32SceneCode.GDDriven_9595CarObjects1.length ;i < len;++i) {
+    gdjs.Game_32SceneCode.GDDriven_9595CarObjects1[i].getBehavior("PhysicsCar3D").setEngineTorqueMax(8000 * runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber());
+}
+}
+{for(var i = 0, len = gdjs.Game_32SceneCode.GDDriven_9595CarObjects1.length ;i < len;++i) {
+    gdjs.Game_32SceneCode.GDDriven_9595CarObjects1[i].getBehavior("PhysicsCar3D").setEngineSpeedMax(6000 * runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber());
+}
+}
+{for(var i = 0, len = gdjs.Game_32SceneCode.GDDriven_9595CarObjects1.length ;i < len;++i) {
+    gdjs.Game_32SceneCode.GDDriven_9595CarObjects1[i].getBehavior("PhysicsCar3D").setEngineTorqueMax(0.1 / runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber());
 }
 }
 }
@@ -1309,7 +1367,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Water"), gdjs.Game_32SceneCode.GDWaterObjects1);
 {for(var i = 0, len = gdjs.Game_32SceneCode.GDWaterObjects1.length ;i < len;++i) {
-    gdjs.Game_32SceneCode.GDWaterObjects1[i].getBehavior("Object3D").setZ(gdjs.Game_32SceneCode.GDWaterObjects1[i].getBehavior("Object3D").getZ() + (runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber()));
+    gdjs.Game_32SceneCode.GDWaterObjects1[i].getBehavior("Object3D").setZ(gdjs.Game_32SceneCode.GDWaterObjects1[i].getBehavior("Object3D").getZ() + (0.5));
 }
 }
 }
@@ -1500,7 +1558,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "Escape");
+isConditionTrue_0 = gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "Equal");
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Main Menu", false);
 }
@@ -1514,7 +1572,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "r");
+isConditionTrue_0 = gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "Tilde");
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Game Scene", false);
 }
@@ -1603,6 +1661,11 @@ gdjs.Game_32SceneCode.GDWaterObjects2.length = 0;
 gdjs.Game_32SceneCode.GDWaterObjects3.length = 0;
 gdjs.Game_32SceneCode.GDWaterObjects4.length = 0;
 gdjs.Game_32SceneCode.GDWaterObjects5.length = 0;
+gdjs.Game_32SceneCode.GDSeedTextObjects1.length = 0;
+gdjs.Game_32SceneCode.GDSeedTextObjects2.length = 0;
+gdjs.Game_32SceneCode.GDSeedTextObjects3.length = 0;
+gdjs.Game_32SceneCode.GDSeedTextObjects4.length = 0;
+gdjs.Game_32SceneCode.GDSeedTextObjects5.length = 0;
 
 gdjs.Game_32SceneCode.eventsList22(runtimeScene);
 gdjs.Game_32SceneCode.GDCarObjects1.length = 0;
@@ -1680,6 +1743,11 @@ gdjs.Game_32SceneCode.GDWaterObjects2.length = 0;
 gdjs.Game_32SceneCode.GDWaterObjects3.length = 0;
 gdjs.Game_32SceneCode.GDWaterObjects4.length = 0;
 gdjs.Game_32SceneCode.GDWaterObjects5.length = 0;
+gdjs.Game_32SceneCode.GDSeedTextObjects1.length = 0;
+gdjs.Game_32SceneCode.GDSeedTextObjects2.length = 0;
+gdjs.Game_32SceneCode.GDSeedTextObjects3.length = 0;
+gdjs.Game_32SceneCode.GDSeedTextObjects4.length = 0;
+gdjs.Game_32SceneCode.GDSeedTextObjects5.length = 0;
 
 
 return;
